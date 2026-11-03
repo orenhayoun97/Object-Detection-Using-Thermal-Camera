@@ -12,13 +12,6 @@ Security tasks such as watching borders, protecting forces in the field, and sca
 
 ## Our solution
 
-```
- ┌──────────── Airborne unit (168 g) ────────────┐        ┌──────────── Ground station ────────────┐
- │ Thermal camera ──► Analog video transmitter ──┼─ RF ──►│ USB receiver ──► Laptop ──► YOLO App   │
- │ (LWIR, 256x192, 25 FPS)   + own LiPo battery  │        │ (seen as a webcam)   (detect + display)│
- └───────── 3D-printed mount on DJI Phantom 4 ───┘        └────────────────────────────────────────┘
-```
-
 - **Hardware:** an uncooled LWIR thermal camera, an analog transmitter and a separate battery sit in a 3D-printed mount on the drone's landing gear. They don't touch the drone's own wiring. Analog transmission was chosen for its very low delay.
 - **Ground station:** a USB receiver shows up on the laptop as an ordinary webcam.
 - **Software:** a Python app runs a YOLO model on every frame. It draws bounding boxes with confidence scores, and the operator can change the detection threshold live.
