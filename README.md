@@ -1,7 +1,6 @@
 # Thermal Object Detection from a Drone
 
 **Final project, Ruppin Academic Center**
-**Authors:** Oren Hayoun & Tal Liberman  **Supervisor:** Uzi Chester
 
 A real-time system that detects and classifies objects (people, cars, street lamps) at night using a **thermal camera mounted on a drone**, an **analog video link** to the ground, and a **YOLO deep-learning model** shown in a **desktop app**.
 
