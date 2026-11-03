@@ -1,0 +1,64 @@
+YOLO App - מדריך הפעלה
+
+
+requirements.txt - Install those libraries
+‫-‬ultralytics>=8.3 pip install ultralytics
+‫-‬PySide6>=6.6 pip install PySide6
+‫-‬opencv-python 
+YOLO app folder/ - codes in app
+
+requirements
+- Need Python
+- Network connection
+
+Running - mac os
+
+2 options to run the app
+- double click on run.command
+- From Terminal - go to folder YOLO App and run command .yolo_app/run.command
+
+For the first time the PC will download relevant libraries and create .venv folder
+
+Running - Windows
+1‪.‬ Open cmd in the YOLO app folder
+2‪.‬ Install relevant file  (take few minuets)
+	python -m venv .venv
+	.venv\Scripts\pip install -r requirements.txt
+
+3‪.‬ Open app with command in cmd
+	.venv\Scripts\python -m yolo_simple
+
+Save files
+
+Mac
+Recording: 	/Movies/YOLO Simple
+Logs: 		/Documents/YOLO Simple/logs
+
+Windows
+Recording: 	C:\Users\Movies/YOLO App
+Logs: 		C:\Users\Documents/YOLO App/logs
+
+
+#APP Setup
+#‪#‬ Setup Screen
+1.load model
+	‪-‬ defult model is yolo26n.pt
+	‪-‬ our model is "yolo26s_best_weights.pt"
+2‪.‬ Input - video or camera
+video - choose path of video
+camera - choose number of camera : 0 is the main camera
+
+Click start if finish
+
+‪##‬ Main Screen - Video/camera playing
+Top bar settings:  
+-Choose objects
+-Change view settings
+-Change threshold(0-1)
+‪-‬Can to record video
+‪-‬Detection Log - When appear an object and which object
+
+Down Bar:
+‪-‬ If video you can pause/play the video
+‪-‬ See the time from the begining
+
